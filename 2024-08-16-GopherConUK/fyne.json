@@ -1,0 +1,11 @@
+{
+  "Colors": {
+    "background": "#ffffffff",
+    "foreground": "#030833ff",
+    "header": "#ffffffff",
+    "subHeader": "#00e0e8ff",
+    "headerBackground": "#03076cff",
+    "bullet": "#000000ff"
+  }
+}
+
