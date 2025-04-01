@@ -50,7 +50,7 @@ for desktop, mobile and beyond
 
 # Fyne Stats
 
-* 6 years old
+* 7 years old
 * Most popular GUI toolkit for Go
 * Ranked 5th of all GUI tools by @OSSInsight
 * Over 26'000 GitHub stars!
