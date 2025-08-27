@@ -1,0 +1,6 @@
+efi
+*.efi
+
+.idea
+OVMF_*.fd
+
