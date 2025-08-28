@@ -11,7 +11,7 @@ import (
 
 func main() {
 	a := app.New()
-	d := setup()
+	d := setup(a)
 
 	winSize := fyne.NewSize(640, 480)
 	if d != nil {

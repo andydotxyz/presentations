@@ -3,9 +3,10 @@
 package main
 
 import (
-	xEmbedded "fyne.io/x/fyne/driver/embedded"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/driver/embedded"
 )
 
-func setup() xEmbedded.Driver {
+func setup(fyne.App) embedded.Driver {
 	return nil
 }
