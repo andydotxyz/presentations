@@ -38,11 +38,7 @@ func main() {
 		}
 	})
 
-	if d != nil {
-		d.Run()
-	} else {
-		a.Run()
-	}
+	a.Run()
 }
 
 func setContent(w fyne.Window) fyne.CanvasObject {
