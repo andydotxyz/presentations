@@ -138,3 +138,18 @@ $ go run .
 
 ![](conflogo.png)
 
+---
+
+# Created with:
+
+* Slydes slideshow app
+* Fyne Terminal
+* FyneDesk desktop
+* (All Fyne.io toolkit apps)
+* Presented on FyshOS
+
+![](fyshos.png)
+
+---
+
+![](desktop.png)
