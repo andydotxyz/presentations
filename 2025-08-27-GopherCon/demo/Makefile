@@ -6,7 +6,13 @@ SHELL = /bin/bash
 APP ?= noosdemo
 
 IMAGE_BASE := 10000000
-TEXT_START := $(shell echo $$((16\#$(IMAGE_BASE) + 16\#10000)))
+TEXT_START :=
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	TEXT_START += $(shell echo $$((16\#$(IMAGE_BASE) + 16\#10000)))
+else
+	TEXT_START += $(shell echo $$((16#$(IMAGE_BASE) + 16#10000)))
+endif
 TAMAGO_GOFLAGS := -tags linkcpuinit,linkramsize,linkramstart,linkprintk,$(FYNE_TAGS) -trimpath -ldflags "-s -w -E cpuinit -T $(TEXT_START) -R 0x1000"
 
 TINYGO_GOFLAGS := -tags noos,noasm,$(FYNE_TAGS)
