@@ -54,12 +54,25 @@ theme = "pettheme"
 
 ---
 
+# Presented with FyneDesk
+
+![](desktop.png)
+
+---
+
+# Visually edit with Apptrix
+
+![](apptrix.png)
+
+---
+
 # Find out more
 
-*
 * github.com/andydotxyz/fynepet
-* https://andy.xyz
 * @andydotxyz
 * #fyne
+* https://andy.xyz
+* https://fyshos.com
+* https://apptrix.ai
 
 ![](Icon.png)
