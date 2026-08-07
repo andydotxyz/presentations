@@ -1,7 +1,7 @@
 +++
 theme = "gophercon"
-name = "" #"Andy Williams"
-footer = "" #"GopherCon 2026"
+name = "Andy Williams"
+footer = "GopherCon 2026"
 +++
 
 <!-- Hello GopherCon! It is amazing to be back to the best Go community gathering! -->

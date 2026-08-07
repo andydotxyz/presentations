@@ -1,0 +1,39 @@
+diff --git a/slidelayout.go b/slidelayout.go
+index 7539b8f..8e5fc34 100644
+--- a/slidelayout.go
++++ b/slidelayout.go
+@@ -77,7 +77,7 @@ func (s *slide) layoutFallback(size fyne.Size, scale float32) {
+ 		subPad = s.subheading.MinSize().Height
+ 	}
+ 
+-	contentSize := size.SubtractWidthHeight(pad*2, size.Height/8.5*2+subPad+pad*2)
++	contentSize := size.SubtractWidthHeight(pad*2, size.Height/5.5*2+subPad+pad*2)
+ 	contentPos := fyne.NewPos(pad, size.Height/6+subPad+pad)
+ 	layoutContent(s.content.Objects[skip:], scale, contentSize, contentPos)
+ }
+diff --git a/slidetheme.go b/slidetheme.go
+index de49ac9..e8345f4 100644
+--- a/slidetheme.go
++++ b/slidetheme.go
+@@ -41,7 +41,7 @@ func (l *backgroundLayout) Layout(objs []fyne.CanvasObject, size fyne.Size) {
+ 	top.Resize(fyne.NewSize(size.Width, size.Height/6))
+ 	top.Move(fyne.Position{})
+ 
+-	bottomHeight := size.Height / 14
++	bottomHeight := size.Height / 5
+ 	bottom.Show()
+ 	bottom.Resize(fyne.NewSize(size.Width, bottomHeight))
+ 	bottom.Move(fyne.NewPos(0, size.Height-bottomHeight))
+diff --git a/slideutil.go b/slideutil.go
+index 4de25b8..a6b288c 100644
+--- a/slideutil.go
++++ b/slideutil.go
+@@ -14,7 +14,7 @@ func layoutContent(objs []fyne.CanvasObject, scale float32, size fyne.Size, pos
+ 		}
+ 	}
+ 
+-	pad := theme.Padding() * scale
++	pad := theme.Padding() * scale * -0.2
+ 	width := size.Width
+ 	if splitAt > -1 && len(objs) > 1 {
+ 		width = (width - pad) / 2
